@@ -8,7 +8,7 @@
   :root { --ink:#1b2430; --muted:#5a6675; --accent:#0b6e4f; --rule:#d5dde5; --side:#f2f6f4; }
   * { box-sizing: border-box; }
   body { margin:0; font-family: Inter, "DejaVu Sans", Arial, sans-serif; color:var(--ink); font-size:9.6pt; line-height:1.42; background:#fff; }
-  .page { width:210mm; height:297mm; overflow:hidden; display:grid; grid-template-columns: 64mm 1fr; }
+  .page { width:210mm; height:297mm; overflow:hidden; break-after:page; display:grid; grid-template-columns: 64mm 1fr; }
   aside { background:var(--side); padding:12mm 7mm 8mm 9mm; font-size:8.8pt; line-height:1.35; }
   main { padding:14mm 11mm 12mm 9mm; }
   h1 { font-size:24pt; line-height:1.05; margin:0; letter-spacing:.5px; }
@@ -34,6 +34,8 @@
   th { color:var(--muted); font-weight:600; font-size:8.3pt; text-transform:uppercase; letter-spacing:.6px; }
   .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:2px 14px; }
   .grid2 div::before { content:"▸ "; color:var(--accent); }
+  .page:last-child { break-after:auto; }
+  .runner { color:var(--muted); font-size:8.5pt; letter-spacing:1px; margin-bottom:6px; }
 </style>
 </head>
 <body>
@@ -70,7 +72,38 @@
     <li><span class="tag">Safety Systems</span>HVAC and fire detection / suppression interfaces</li>
     <li><span class="tag">Grid Interface</span>145 kV evacuation, SF₆ breakers, CT / PT, protection &amp; earthing</li>
   </ul>
+</aside>
 
+<main>
+  <h1>JUSTIN THOMAS</h1>
+  <div class="headline">BESS PROJECT MANAGER — UTILITY-SCALE BATTERY ENERGY STORAGE</div>
+
+  <h2>Profile</h2>
+  <p>Electrical project manager with 11+ years in utility-scale renewable energy, currently leading electrical project delivery of a <strong>125 MW / 500 MWh standalone LFP BESS</strong> for JSW Renew Energy in Kerala — one of India's largest battery storage assets under construction.</p>
+  <p>Runs the complete BESS electrical package on the EPC contractor side: containerised battery systems, PCS, MV/HV balance of plant, EMS/SCADA and the 145 kV evacuation interface. Has worked on BESS from the EPC contractor, Owner's Engineer and government implementing agency sides, including a 500 MW BESS + solar hybrid at Khavda and a 1.4 MWh island BESS in Lakshadweep.</p>
+
+  <h2>BESS Project Portfolio</h2>
+  <table>
+    <thead><tr><th>Project</th><th>Capacity</th><th>Location</th><th>Role</th></tr></thead>
+    <tbody>
+      <tr><td>JSW Renew Energy 38L — Standalone LFP BESS</td><td>125 MW / 500 MWh</td><td>Kasaragod, Kerala</td><td>EPC Contractor — Amara Raja Infra</td></tr>
+      <tr><td>Khavda BESS + Solar Hybrid</td><td>500 MW</td><td>Khavda, Gujarat</td><td>Owner's Engineer — TQ Cert (Tata Projects)</td></tr>
+      <tr><td>Lakshadweep Island BESS</td><td>1.4 MWh</td><td>Lakshadweep, UT</td><td>Implementing Agency — SECI</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Professional Experience</h2>
+  <div class="role">
+    <div class="role-head"><span class="role-title">Manager – Electrical Projects (BESS)</span><span class="dates">Aug 2025 – Present</span></div>
+    <div class="org">Amara Raja Infra Pvt. Ltd. (ARIPL)</div>
+    <div class="project"><strong>Project:</strong> JSW Renew Energy Thirty-Eight Ltd. — 125 MW / 500 MWh standalone LFP BESS, Mylatty, Kasaragod, Kerala. EPC contractor scope; Tata Consulting Engineers (TCE) as Owner's Engineer.</div>
+    <ul><li>Leads electrical project delivery for a 500 MWh standalone LFP BESS, one of India's largest storage assets under construction, covering containerised battery systems, PCS, MV/HV balance of plant and the 145 kV evacuation interface.</li><li>Owns the OEM and vendor interface across Gotion (LFP battery containers), Hopewind (PCS), Shilchar and Trisquare (transformers, MV panels), CG Power, KEC (power cables), Smart Grid (EMS/SCADA) and Fuji Electric (UPS).</li><li>Drives drawing approvals, site acceptance and defect closure across all electrical packages so equipment supply and installation stay in step with the construction sequence.</li><li>Manages the interfaces between battery, PCS, transformer, MV switchgear, cabling, EMS/SCADA and UPS packages, resolving cross-vendor technical issues before they reach the critical path.</li><li>Acts as the electrical point of contact for the client (JSW) and the Owner's Engineer (TCE), keeping approvals, technical queries and progress reviews moving.</li></ul>
+  </div>
+</main>
+</div>
+
+<div class="page">
+<aside>
   <h2>Tools</h2>
   <ul><li>MS Project, AutoCAD, MS Office</li></ul>
 
@@ -91,47 +124,32 @@
     <li>Preferred: Mumbai, Bengaluru, Hyderabad — open to pan-India &amp; GCC relocation</li>
   </ul>
 </aside>
-
 <main>
-  <h1>JUSTIN THOMAS</h1>
-  <div class="headline">BESS PROJECT MANAGER — UTILITY-SCALE BATTERY ENERGY STORAGE</div>
-
-  <h2>Profile</h2>
-  <p>Electrical project manager with 11+ years in utility-scale renewable energy, currently leading electrical project delivery of a <strong>125 MW / 500 MWh standalone LFP BESS</strong> for JSW Renew Energy in Kerala — one of India's largest battery storage assets under construction.</p>
-  <p>Runs the complete BESS electrical package on the EPC contractor side: containerised battery systems, PCS, MV/HV balance of plant, EMS/SCADA and the 145 kV evacuation interface. Manages seven OEMs and suppliers, the Owner's Engineer and the client from drawing approval through site acceptance and closure. Earlier delivered a 1.4 MWh island BESS in Lakshadweep for SECI under tight logistical constraints.</p>
-
-  <h2>BESS Project Portfolio</h2>
-  <table>
-    <thead><tr><th>Project</th><th>Capacity</th><th>Location</th><th>Role</th></tr></thead>
-    <tbody>
-      <tr><td>JSW Renew Energy 38L — Standalone LFP BESS</td><td>125 MW / 500 MWh</td><td>Kasaragod, Kerala</td><td>EPC Contractor — Amara Raja Infra</td></tr>
-      <tr><td>Lakshadweep Island BESS</td><td>1.4 MWh</td><td>Lakshadweep, UT</td><td>Implementing Agency — SECI</td></tr>
-    </tbody>
-  </table>
-
-  <h2>BESS Project Experience</h2>
-
+  <div class="runner">JUSTIN THOMAS — BESS PROJECT MANAGER · PAGE 2</div>
+  <h2 style="margin-top:4px">Professional Experience (continued)</h2>
   <div class="role">
-    <div class="role-head"><span class="role-title">Manager – Electrical Projects (BESS)</span><span class="dates">Aug 2025 – Present</span></div>
-    <div class="org">Amara Raja Infra Pvt. Ltd. (ARIPL)</div>
-    <div class="project"><strong>Project:</strong> JSW Renew Energy Thirty-Eight Ltd. — 125 MW / 500 MWh standalone LFP BESS, Mylatty, Kasaragod, Kerala. EPC contractor scope; Tata Consulting Engineers (TCE) as Owner's Engineer.</div>
-    <ul>
-      <li>Leads electrical project delivery for a 500 MWh standalone LFP BESS, one of India's largest storage assets under construction, covering containerised battery systems, PCS, MV/HV balance of plant and the 145 kV evacuation interface.</li>
-      <li>Owns the OEM and vendor interface across Gotion (LFP battery containers), Hopewind (PCS), Shilchar and Trisquare (transformers, MV panels), CG Power, KEC (power cables), Smart Grid (EMS/SCADA) and Fuji Electric (UPS).</li>
-      <li>Drives drawing approvals, site acceptance and defect closure across all electrical packages so equipment supply and installation stay in step with the construction sequence.</li>
-      <li>Manages the interfaces between battery, PCS, transformer, MV switchgear, cabling, EMS/SCADA and UPS packages, resolving cross-vendor technical issues before they reach the critical path.</li>
-      <li>Acts as the electrical point of contact for the client (JSW) and the Owner's Engineer (TCE), keeping approvals, technical queries and progress reviews moving.</li>
-    </ul>
+    <div class="role-head"><span class="role-title">Owner's Engineer</span><span class="dates">Aug 2023 – Aug 2025</span></div>
+    <div class="org">TQ Cert Services Pvt. Ltd. (Tata Projects Ltd.)</div>
+    <div class="project"><strong>Projects:</strong> 500 MW BESS + solar hybrid, Khavda, Gujarat | 1,034 MW Siyambar / Bandha solar, Jaisalmer, Rajasthan.</div>
+    <ul><li>Represented the owner on a 500 MW BESS-plus-solar hybrid at Khavda and a 1,034 MW solar programme, among the largest renewable assets in the country, protecting owner interests across EPC contractor performance.</li><li>Carried out design and drawing reviews and decided contractor deviation and concession requests on technical merit.</li></ul>
   </div>
-
+  <div class="role">
+    <div class="role-head"><span class="role-title">Project Lead</span><span class="dates">Aug 2022 – Aug 2023</span></div>
+    <div class="org">Tata Power Renewable Energy Ltd. (TP Solapur / TPREL)</div>
+    <div class="project"><strong>Projects:</strong> 450 MWp / 335 MW AC solar, Bikaner, Rajasthan | 300 MW solar, Dholera, Gujarat | EV charging operations.</div>
+    <ul><li>Led developer-side project execution across roughly 750 MW of utility-scale solar in two states, managing EPC contractors against schedule and safety commitments on behalf of the asset owner.</li><li>Tracked progress through site reviews, milestone verification and punch-list closure, driving contractors to commissioning and commercial operation readiness.</li><li>Coordinated engineering, procurement, contracts, HSE and O&amp;M functions to resolve interface issues and keep multi-package sites in sequence.</li></ul>
+  </div>
   <div class="role">
     <div class="role-head"><span class="role-title">Project Engineer — Implementation</span><span class="dates">Oct 2020 – Aug 2022</span></div>
     <div class="org">Solar Energy Corporation of India (SECI)</div>
-    <div class="project"><strong>Project:</strong> 1.4 MWh island battery energy storage system, Lakshadweep (UT).</div>
-    <ul>
-      <li>Delivered a 1.4 MWh island BESS installation in Lakshadweep, managing storage system integration under logistically constrained island conditions.</li>
-      <li>Worked within the central nodal agency's policy, tendering and stakeholder framework, a perspective that now informs contract-aware BESS project decisions and bid-stage technical scrutiny.</li>
-    </ul>
+    <div class="project"><strong>Projects:</strong> 1.4 MWh island BESS, Lakshadweep | 2,050 MW Pavagada Solar Park, Karnataka.</div>
+    <ul><li>Delivered a 1.4 MWh island BESS installation in Lakshadweep, managing storage system integration under logistically constrained island conditions.</li><li>Supported implementation of the 2,050 MW Pavagada Solar Park, one of the world's largest solar parks, monitoring developer and contractor delivery against scheme milestones on behalf of the central nodal agency.</li><li>Built the policy, tendering and stakeholder perspective that now informs bid-stage technical scrutiny and contract-aware project decisions.</li></ul>
+  </div>
+  <div class="role">
+    <div class="role-head"><span class="role-title">Electrical Engineer — Execution &amp; O&amp;M</span><span class="dates">Jun 2015 – Oct 2020</span></div>
+    <div class="org">KC Kopar Energy Solutions</div>
+    <div class="project"><strong>Project:</strong> 25.4 MW solar installation at Cochin International Airport Ltd. (CIAL), the world's first fully solar-powered airport.</div>
+    <ul><li>Executed 25.4 MW of solar generation across ground-mount, rooftop and canopy installations within a live, security-controlled airport environment.</li><li>Managed installation, testing and commissioning of modules, inverters, LT/HT switchgear, transformers and evacuation infrastructure, coordinating with airport operations to protect uninterrupted service.</li><li>Ran O&amp;M for the operating plant: preventive and breakdown maintenance, performance monitoring, fault diagnosis and generation reporting.</li></ul>
   </div>
 </main>
 </div>
