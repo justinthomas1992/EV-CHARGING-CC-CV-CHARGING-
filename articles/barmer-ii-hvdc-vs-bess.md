@@ -42,18 +42,19 @@ Solar far from load with no export path is stranded capacity. Adding storage beh
 |---|---|---|
 | HVDC annual charge | ₹3,244 crore/yr | Quoted: ₹32.44 bn |
 | HVDC estimated capex | ₹24,974 crore | NCT estimate |
-| HVDC charge per MW-month | ≈ ₹0.45 lakh | 3,244 cr ÷ 6,000 MW ÷ 12 |
+| HVDC charge per MW-month | ≈ ₹4.5 lakh | 3,244 cr ÷ 6,000 MW ÷ 12 |
 | BESS reference tariff | ₹2.80 lakh/MW/month | Gujarat tender, no VGF |
-| BESS 6 GW at that tariff | ≈ ₹20,160 crore/yr | 6,000 × ₹2.80 lakh × 12 |
+| BESS 6 GW at that tariff | ≈ ₹2,016 crore/yr | 6,000 × ₹2.80 lakh × 12 = 2,01,600 lakh |
 | BESS energy | 25.5 GWh | 6 GW × 4.25 h |
 
-On this crude basis, a battery fleet of the same MW rating costs about **six times** the corridor's annual charge. But I want to be clear about what this table does **not** show:
+On this crude basis, a battery fleet of the same MW rating looks **cheaper**: about ₹2.8 lakh/MW/month against about ₹4.5 lakh/MW/month for the corridor, or roughly 60% of the HVDC annual charge. That is exactly the kind of headline comparison behind the early "BESS could be cheaper" estimates, and it is why the detailed costing matters. This table does **not** show:
 
 - The BESS figure buys a service (4-hour shifting, firming, ancillary support) that the line does not provide.
 - The line buys a service (1,000 km of bulk transfer) that the battery cannot provide at all.
 - Tariffs, durations, degradation, augmentation and asset lives all differ.
+- A battery at Barmer still needs *some* export capacity to be useful. The battery-only option does not remove the network cost; it only shrinks it.
 
-The gap is large and points one way, but it measures two different services. It is not a head-to-head on equal terms.
+The headline tariff favours storage, but it measures two different services. Once you count the export capacity a battery-only option would still need, the comparison changes, and that is what CTUIL's detailed costing found.
 
 ### A rough break-even framing
 
