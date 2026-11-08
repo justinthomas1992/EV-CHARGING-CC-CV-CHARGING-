@@ -1,12 +1,35 @@
-            - name: Setup MATLAB
-  # You may pin to the exact commit or the version.
-  # uses: matlab-actions/setup-matlab@1cd3c559a06a6bed4f48269e8642e6ea6f8b7a0a
-  uses: matlab-actions/setup-matlab@v2.2.0
-  with:
-    # MATLAB release to set up (R2021a or later)
-    release: # optional, default is latest
-    # Products to set up in addition to MATLAB, specified as a list of product names separated by spaces
-    products: # optional, default is 
-    # Option to enable caching with GitHub Actions, specified as false or true
-    cache: # optional
-          
+name: MATLAB EV CC-CV Charging
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  matlab:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Look for MATLAB/Simulink files
+        id: detect
+        run: |
+          if find . -path ./.git -prune -o \( -name '*.m' -o -name '*.slx' -o -name '*.mdl' \) -print | grep -q .; then
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::No MATLAB or Simulink files in the repository yet, so the MATLAB steps are skipped."
+          fi
+
+      - name: Set up MATLAB
+        if: steps.detect.outputs.found == 'true'
+        uses: matlab-actions/setup-matlab@v2.2.0
+        with:
+          products: Simulink Simscape Simscape_Electrical
+
+      - name: Run MATLAB tests
+        if: steps.detect.outputs.found == 'true'
+        uses: matlab-actions/run-tests@v2
